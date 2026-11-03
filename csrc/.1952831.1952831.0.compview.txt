@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1779139570.127198373, "rt":0.16, "ut":0.07, "st":0.05}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1779139569.280617319}
+{"VCS_COMP_START_TIME": 1779139569.280617319}
+{"VCS_COMP_END_TIME": 1779139570.365743660}
+{"VCS_USER_OPTIONS": "-l vcs.log -sverilog -debug_access+all -kdb -full64 -cm line+cond+tgl+branch+fsm+assert+group ./generator.sv ./driver.sv ./monitor.sv ./scoreboard.sv ./environment.sv ./top.sv ./test.sv ./interface.sv ./motionEstimator.v"}
+{"vcs1": {"peak_mem": 506136}}

@@ -1,0 +1,26 @@
+<session version="1.1" release="W-2024.09-1" timestp="2026-05-18 20:20:23 GMT">
+  <info>
+    <attr name="datetime" value="Mon May 18 13:38:26 2026
+"/>
+    <attr name="command" value="urg -dir simv.vdb -format both -report cov_report"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Group" value="99.6094%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="$unit::scoreboard::motion_cov">
+      <metric name="Group" value="99.6094%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>

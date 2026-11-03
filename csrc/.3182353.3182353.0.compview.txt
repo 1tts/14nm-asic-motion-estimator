@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1777576032.954653119, "rt":0.15, "ut":0.05, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1777576032.333434091}
+{"VCS_COMP_START_TIME": 1777576032.333434091}
+{"VCS_COMP_END_TIME": 1777576033.189395415}
+{"VCS_USER_OPTIONS": "-sverilog -full64 motionEstimator_interface.sv motionEstimator.v motionEstimator_programtest.sv motionEstimator_top.sv -o output.simv -debug_access+all -kdb"}
+{"vcs1": {"peak_mem": 505020}}

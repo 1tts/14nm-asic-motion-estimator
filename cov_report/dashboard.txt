@@ -1,0 +1,21 @@
+Dashboard
+
+Date: Mon May 18 13:38:26 2026
+
+User: 921814566
+
+Version: W-2024.09-1
+Command line: urg -dir simv.vdb -format both -report cov_report
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  GROUP  
+ 99.61  99.61 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+ 99.61 1      
+

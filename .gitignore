@@ -1,0 +1,10 @@
+output.simv.daidir/
+vcdplus.vpd
+simv.daidr/
+output.simv.vdb/
+output.txt.vdb/
+*.vpd
+*.vpd
+.nvim/
+*.fsdb
+

@@ -1,0 +1,90 @@
+global coverage_group 0 0 $unit::scoreboard::motion_cov __coverage_scoreboard.motion_cov unused_scoreboard_motion_cov_loop_label $unit 0 1 0 1 $unit::./driver.sv::./environment.sv...@2711732253 0  ( 0 
+)
+ 1 1
+ 0 45 /home/921814566/ENGR850/Project/scoreboard.sv
+ 14 0 0 0 1 0 0 0 0  1
+0
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+0
+ 10 cp_motionX 16 0 0 0 0 0 0 58 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn 58 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 1 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 12 motionX_bins 17 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn_0 0 60 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn_1 0 0 0 0 0
+ 0
+
+ 10 cp_motionY 20 0 0 0 0 0 0 60 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn_2 60 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 1 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 12 motionY_bins 21 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn_0 0 60 scoreboard::_vcs_unit__2711732253_scoreboard_motion_cov_fn_1 0 0 0 0 0
+ 0
+
+ 14 cross_motionXY 0 24 0 0 -1 0 0 0 0 2 0 1 0 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

@@ -1,0 +1,3 @@
+Command Line: /packages/synopsys/verdi/W-2024.09-1/platform/LINUXAMD64/bin/Novas -dbdir simv.daidir -ssf motion.fsdb
+uname(Linux mahmoodi.rcc.at.sfsu.edu 4.18.0-553.123.1.el8_10.x86_64 #1 SMP Tue May 5 15:46:59 UTC 2026 x86_64)
+au time 732.213116 13.931876 2.989046 delta 687845376 687845376 total 1718079488 1718079488

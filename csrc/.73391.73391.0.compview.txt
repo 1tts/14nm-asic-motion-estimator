@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1778535795.959192939, "rt":0.12, "ut":0.04, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1778535795.503463100}
+{"VCS_COMP_START_TIME": 1778535795.503463100}
+{"VCS_COMP_END_TIME": 1778535796.128957442}
+{"VCS_USER_OPTIONS": "-l vcs.log -sverilog -debug_all -full64 ./generator.sv ./driver.sv ./monitor.sv ./scoreboard.sv ./environment.sv ./top.sv ./test.sv ./interface.sv ./motionEstimator.v"}

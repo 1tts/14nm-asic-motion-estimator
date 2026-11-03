@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1778607443.737561844, "rt":0.13, "ut":0.04, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1778607443.084359714}
+{"VCS_COMP_START_TIME": 1778607443.084359714}
+{"VCS_COMP_END_TIME": 1778607443.909969550}
+{"VCS_USER_OPTIONS": "-sverilog -full64 ./generator.sv ./driver.sv ./monitor.sv ./scoreboard.sv ./environment.sv ./top.sv ./test.sv ./interface.sv ./motionEstimator.v -o output.simv -debug_access+all -kdb"}

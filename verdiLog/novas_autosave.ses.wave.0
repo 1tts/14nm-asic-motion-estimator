@@ -1,0 +1,70 @@
+Magic 271485
+Revision Verdi_W-2024.09-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1707 415 198 50
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/921814566/ENGR850/Project/motion.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 30914736637.477875 30915208362.522125
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 3
+; marker line index
+markerPos 17
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "meif(me_if)"
+activeDirFile "" "/home/921814566/ENGR850/Project/motion.fsdb"
+addSignal -h 15 /top/meif/clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope tb_test_type[4:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tb_expected_motionX[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tb_expected_motionY[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tb_expected_BestDist[7:0]
+addSignal -h 15 -holdScope start
+addSignal -h 15 -UNSIGNED -HEX -holdScope R[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope S1[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope S2[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope BestDist[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope motionX[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope motionY[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope AddressR[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope AddressS1[9:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope AddressS2[9:0]
+addSignal -h 15 -holdScope completed
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

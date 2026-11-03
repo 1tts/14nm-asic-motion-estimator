@@ -1,0 +1,22 @@
+verdiWindowResize -win $_vdCoverage_1 "8" "31" "1707" "996"
+gui_set_pref_value -category {coveragesetting} -key {geninfodumping} -value 1
+gui_exclusion -set_force true
+verdiSetFont  -font  {DejaVu Sans}  -size  11
+verdiSetFont -font "DejaVu Sans" -size "11"
+gui_assert_mode -mode flat
+gui_class_mode -mode hier
+gui_excl_mgr_flat_list -on  0
+gui_covdetail_select -id  CovDetail.1   -name   Line
+verdiWindowWorkMode -win $_vdCoverage_1 -coverageAnalysis
+gui_open_cov  -hier simv.vdb -testdir {} -test {simv/test simv/motion_cov} -merge MergedTest -db_max_tests 10 -sdc_level 1 -fsm transition
+verdiSetActWin -dock widgetDock_<CovDetail>
+gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
+verdiSetActWin -dock widgetDock_<Summary>
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { {/$unit::scoreboard::motion_cov}   }
+gui_list_expand -id  CoverageTable.1   -list {covtblFGroupsList} {/$unit::scoreboard::motion_cov}
+gui_list_expand -id CoverageTable.1   {/$unit::scoreboard::motion_cov}
+gui_list_action -id  CoverageTable.1 -list {covtblFGroupsList} {/$unit::scoreboard::motion_cov}  -column {Group} 
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { {/$unit::scoreboard::motion_cov}  {$unit::scoreboard::motion_cov.cross_motionXY}   }
+gui_list_select -id CovDetail.1 -list covergroup { {$unit::scoreboard::motion_cov.cp_motionX}   } -type { {Cover Group}  }
+verdiSetActWin -dock widgetDock_<CovDetail>
+vdCovExit -noprompt

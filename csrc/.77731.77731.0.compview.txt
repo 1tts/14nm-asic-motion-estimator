@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1778536309.397703413, "rt":0.57, "ut":0.33, "st":0.19}}
+{"vcselab":{"timestamp_begin":1778536310.058328603, "rt":0.30, "ut":0.20, "st":0.07}}
+{"link":{"timestamp_begin":1778536310.421226033, "rt":0.24, "ut":0.13, "st":0.07}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1778536308.719896067}
+{"VCS_COMP_START_TIME": 1778536308.719896067}
+{"VCS_COMP_END_TIME": 1778536310.810049663}
+{"VCS_USER_OPTIONS": "-sverilog -full64 ./generator.sv ./driver.sv ./monitor.sv ./scoreboard.sv ./environment.sv ./top.sv ./test.sv ./interface.sv ./motionEstimator.v -o output.simv -debug_access+all -kdb"}
+{"vcs1": {"peak_mem": 505192}}
+{"vcselab": {"peak_mem": 206404}}

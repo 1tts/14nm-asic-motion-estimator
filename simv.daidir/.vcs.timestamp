@@ -1,0 +1,135 @@
+0
+50
++itf+/packages/synopsys/vcs/W-2024.09-1/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/packages/synopsys/vcs/W-2024.09-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /packages/synopsys/vcs/W-2024.09-1/linux64/lib/libvirsim.so /packages/synopsys/vcs/W-2024.09-1/linux64/lib/liberrorinf.so /packages/synopsys/vcs/W-2024.09-1/linux64/lib/libsnpsmalloc.so /packages/synopsys/vcs/W-2024.09-1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/packages/synopsys/vcs/W-2024.09-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/packages/synopsys/verdi/W-2024.09-1//share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/packages/synopsys/vcs/W-2024.09-1/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-Xufe=2steps
+-Xufe=2steps
+-Xufe=2steps
+-cm
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-kdb=common_elab
+-kdb=common_elab
+-kdb=common_elab
+-l
+-picarchive
+-sverilog
+/packages/synopsys/vcs/W-2024.09-1/linux64/bin/vcs1
+vcs.log
+line+cond+tgl+branch+fsm+assert
+/packages/synopsys/verdi/W-2024.09-1//share/PLI/VCS/LINUX64/verdi.tab
+./generator.sv
+./driver.sv
+./monitor.sv
+./scoreboard.sv
+./environment.sv
+./top.sv
+./test.sv
+./interface.sv
+./motionEstimator.v
+60
+which_declare=declare -f
+installdir=/packages/synopsys/verdi/W-2024.09-1
+XKEYSYMDB=/usr/share/X11/XKeysymDB
+XDG_SESSION_ID=743
+XDG_RUNTIME_DIR=/run/user/420330927
+XDG_DATA_DIRS=/home/921814566/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VMR_MODE_FLAG=64
+VIRSIMHOME=/packages/synopsys/vcs/W-2024.09-1/gui/virsim
+VERDI_HOME=/packages/synopsys/verdi/W-2024.09-1/
+VENDOR=unknown
+VCS_PYTHON3=/packages/synopsys/vcs/W-2024.09-1//linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=vcs.log
+VCS_INTERNAL_CONVERTEDLIBS=
+VCS_HOME=/packages/synopsys/vcs/W-2024.09-1/
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_CC=gcc
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+VCS=/packages/synopsys/vcs/W-2024.09-1
+UNAME=/bin/uname
+TOOL_HOME=/packages/synopsys/vcs/W-2024.09-1/linux64
+TOOLSET=VCS
+SYNOPSYS_LC_ROOT=/packages/synopsys/library_compiler/S-2021.06-SP4
+SSH_TTY=/dev/pts/5
+SSH_CONNECTION=130.212.160.246 56439 130.212.15.54 22
+SSH_CLIENT=130.212.160.246 56439 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_VHDL_WRAPPER_KDB=1
+SNPS_VCS_PYTHON3=/packages/synopsys/vcs/W-2024.09-1//linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/packages/synopsys/vcs/W-2024.09-1//linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=130.212.160.246
+OVA_UUM=0
+OSTYPE=linux
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/5
+MAKE_TERMERR=/dev/pts/5
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=KCM:
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GROUP=domain users
+GDK_BACKEND=x11
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-9B4g4oZDwX,guid=87721ecbb1b532a1b91fae8a6a0bd3d6
+CG_PROGNAME=Synopsys
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+0
+0
+12
+1779138620 ./motionEstimator.v
+1779143595 ./interface.sv
+1779133034 ./test.sv
+1779141931 ./top.sv
+1779133034 ./environment.sv
+1779162654 ./scoreboard.sv
+1779133034 ./monitor.sv
+1779170733 ./driver.sv
+1779166732 ./generator.sv
+1729652739 /packages/synopsys/vcs/W-2024.09-1//include/cm_vcsd.tab
+1728791477 /packages/synopsys/verdi/W-2024.09-1//share/PLI/VCS/LINUX64/verdi.tab
+1729652765 /packages/synopsys/vcs/W-2024.09-1/linux64/lib/vcsdp_lite.tab
+4
+1729655332 /packages/synopsys/vcs/W-2024.09-1/linux64/lib/libvirsim.so
+1729654105 /packages/synopsys/vcs/W-2024.09-1/linux64/lib/liberrorinf.so
+1729654092 /packages/synopsys/vcs/W-2024.09-1/linux64/lib/libsnpsmalloc.so
+1729654089 /packages/synopsys/vcs/W-2024.09-1/linux64/lib/libvfs.so
+1779170756 simv.daidir
+-1 partitionlib

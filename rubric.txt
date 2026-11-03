@@ -1,0 +1,47 @@
+- clock generation (1)
+	-> In module top
+
+- reset application (1) 
+  ->(start with RMEM and SMEM)
+  >> Start pin beginnings at 0
+  >> Start pin goes to 1, then check the output
+  >> Then goes 0
+  >> Goes 1 when starting next search
+
+- random input generation (6)
+	-> expected_motion_X
+	-> expected_motion_Y
+	-> expected_BestDist
+	-> RMEM
+	-> SMEM
+	-> Noise
+
+- constraints on random input (2)
+	-> expected_BestDist
+	-> Noise
+	>> constraint c { expected_BestDist < 10 ; noise.sum == expected_best_dist};
+	
+- application of random (1)
+	-> Driver
+	>> Applying all the random inputs
+
+- Self-check correctness for DUT output (3)
+	-> Motion X
+	-> Motion Y
+	-> BestDist
+	>> Happens in scoreboard/checker
+
+- functional coverage definition (3)
+	-> On expected_motionX >> 16 position
+	-> On expected_motionY >> 16 position
+	-> cross of these >> 256 position (16*16)
+	
+- Collect and report functional coverage and Hitting minimum of 90% (2)
+
+- Simulation/Waveform (1)
+
+Overall: 20 points
+	
+completed
+clock generation (1)
+reset application (1) 
