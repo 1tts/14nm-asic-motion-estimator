@@ -1,0 +1,54 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : top
+Version: S-2021.06-SP4
+Date   : Tue Dec  9 13:53:57 2025
+****************************************
+
+
+  Startpoint: S2[1] (input port clocked by ideal_clock1)
+  Endpoint: pe_u/pe10/Accumulate_reg[7]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  S2[1] (in)                                              0.00       0.50 f
+  pe_u/pe10/U15/X (SAEDSLVT14_AO22_1)                     0.03       0.53 f
+  pe_u/pe10/sub_46/U2/X (SAEDSLVT14_INV_1)                0.01       0.54 r
+  pe_u/pe10/sub_46/U2_1/CO (SAEDSLVT14_ADDF_V1_1)         0.04       0.58 r
+  pe_u/pe10/sub_46/U2_2/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.61 r
+  pe_u/pe10/sub_46/U2_3/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.64 r
+  pe_u/pe10/sub_46/U2_4/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.67 r
+  pe_u/pe10/sub_46/U2_5/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.69 r
+  pe_u/pe10/sub_46/U2_6/S (SAEDSLVT14_ADDF_V1_1)          0.04       0.73 f
+  pe_u/pe10/add_52/U1_6/CO (SAEDSLVT14_ADDF_V1_1)         0.05       0.78 f
+  pe_u/pe10/add_52/U1_7/S (SAEDSLVT14_ADDF_V1_1)          0.03       0.81 r
+  pe_u/pe10/U10/X (SAEDSLVT14_INV_1)                      0.01       0.82 f
+  pe_u/pe10/Accumulate_reg[7]/SD (SAEDSLVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                          0.01       0.82 f
+  data arrival time                                                  0.82
+
+  clock ideal_clock1 (rise edge)                          3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock reconvergence pessimism                           0.00       3.00
+  pe_u/pe10/Accumulate_reg[7]/CK (SAEDSLVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                                     3.00 r
+  library setup time                                     -0.01       2.99
+  data required time                                                 2.99
+  ------------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -0.82
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        2.17
+
+
+1

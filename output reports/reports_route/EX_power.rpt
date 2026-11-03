@@ -1,0 +1,128 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec 15 19:17:10 2025
+****************************************
+Information: Activity propagation will be performed for scenario func_fast.
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDNRBSBQ_V2_0P5' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDNRBSBQ_V2_1' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDNRBSBQ_V2_2' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDNRBSBQ_V2_4' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDPRBSBQ_V2_0P5' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDPRBSBQ_V2_1' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDPRBSBQ_V2_2' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FDPRBSBQ_V2_4' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDPRBSBQ_V2LP_0P5' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Cannot infer functionality of libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDPRBSBQ_V2LP_2' and will be excluded from sequential mapping. (SQM-1061)
+Warning: Skipping check for single_bit_degenerate attribute on the multibit libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_0P5' since it is not a black-box. (SQM-1079)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_0P5'. (SQM-2004)
+Warning: Skipping check for single_bit_degenerate attribute on the multibit libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_1' since it is not a black-box. (SQM-1079)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_1'. (SQM-2004)
+Warning: Skipping check for single_bit_degenerate attribute on the multibit libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_2' since it is not a black-box. (SQM-1079)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_2'. (SQM-2004)
+Warning: Skipping check for single_bit_degenerate attribute on the multibit libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_4' since it is not a black-box. (SQM-1079)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN2_V2_4'. (SQM-2004)
+Warning: Skipping check for single_bit_degenerate attribute on the multibit libcell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN4_V2_0P5' since it is not a black-box. (SQM-1079)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN4_V2_0P5'. (SQM-2004)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN4_V2_1'. (SQM-2004)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN4_V2_2'. (SQM-2004)
+Information: No single-bit representative was found for multibit lib cell 'saed14hvt_ff0p88v125c/SAEDHVT14_FSDN4_V2_4'. (SQM-2004)
+Information: No single-bit representative was found for multibit lib cell 'saed14lvt_ff0p88v125c/SAEDLVT14_FSDN2_V2_0P5'. (SQM-2004)
+Information: No single-bit representative was found for multibit lib cell 'saed14lvt_ff0p88v125c/SAEDLVT14_FSDN2_V2_1'. (SQM-2004)
+Warning: Found 32 multibit sequential library cells that have missing/added attributes or have restrictions that prevent them from banking. (SQM-1053)
+0 sequential multibit library cells have restrictions (dont_use or dont_touch).
+32 sequential multibit library cells have missing sequential mapping relevant attributes
+Information: Doing activity propagation for mode 'func' and corner 'fast' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_fast (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+
+ **** Information : No. of simulation cycles = 6 ****
+Information: The stitching and editing of coupling caps is turned OFF for design 'libraryname:top.design'. (TIM-125)
+Information: Design top has 1494 nets, 0 global routed, 1492 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Information: The RC mode used is DR for design 'top'. (NEX-022)
+---extraction options---
+Corner: slow
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: fast
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: top 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 1492 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1492, routed nets = 1492, across physical hierarchy nets = 0, parasitics cached nets = 1492, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Mode: func
+Corner: fast
+Scenario: func_fast
+Voltage: 0.88
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port D1 on cell ctl_u/count_reg[12] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000477 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell ctl_u/count_reg[12] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004692 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D1 on cell ctl_u/count_reg[3] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000515 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell ctl_u/count_reg[3] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004692 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D1 on cell ctl_u/count_reg[2] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000515 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell ctl_u/count_reg[2] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004692 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D1 on cell ctl_u/count_reg[1] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000515 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell ctl_u/count_reg[1] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004692 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D1 on cell ctl_u/count_reg[0] for parameter Tinp. Lowest table value = 0.003000, highest table value = 0.133000, value = 0.000515 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell ctl_u/count_reg[0] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004711 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Rise-Fall toggles on pin comp_u/U136/X are impossible given input states; converted to zero toggles. (POW-069)
+
+  Cell Internal Power    = 1.30e+08 pW ( 62.7%)
+  Net Switching Power    = 7.71e+07 pW ( 37.3%)
+Total Dynamic Power      = 2.07e+08 pW (100.0%)
+
+Cell Leakage Power       = 7.21e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             9.70e+07               3.71e+07               2.19e+07               1.56e+08    ( 16.8%)        i
+register                  1.20e+07               7.71e+06               1.60e+08               1.80e+08    ( 19.4%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             2.08e+07               3.22e+07               5.39e+08               5.92e+08    ( 63.8%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.30e+08 pW            7.71e+07 pW            7.21e+08 pW            9.28e+08 pW
+1

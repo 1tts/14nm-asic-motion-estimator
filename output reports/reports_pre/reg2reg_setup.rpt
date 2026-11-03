@@ -1,0 +1,71 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : top
+Version: S-2021.06-SP4
+Date   : Tue Dec  9 13:54:16 2025
+****************************************
+
+
+  Startpoint: ctl_u/count_reg[3]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/motionY_reg[2]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctl_u/count_reg[3]/CK (SAEDLVT14_FDPMQ_1)               0.00       0.00 r
+  ctl_u/count_reg[3]/Q (SAEDLVT14_FDPMQ_1)                0.01       0.01 r
+  ctl_u/U82/X (SAEDHVT14_BUF_U_0P5)                       0.03       0.04 r
+  ctl_u/U29/X (SAEDSLVT14_OR3_0P75)                       0.03       0.07 r
+  ctl_u/U24/X (SAEDSLVT14_NR3_0P75)                       0.03       0.09 f
+  ctl_u/U23/X (SAEDSLVT14_AN2_MM_1)                       0.03       0.12 f
+  comp_u/U15/X (SAEDSLVT14_NR2_MM_1)                      0.02       0.14 r
+  comp_u/U17/X (SAEDSLVT14_NR3B_U_0P5)                    0.02       0.16 r
+  comp_u/U128/X (SAEDSLVT14_ND2B_U_0P5)                   0.01       0.18 f
+  comp_u/U13/X (SAEDSLVT14_NR2_MM_1)                      0.02       0.19 r
+  comp_u/U126/X (SAEDSLVT14_ND2B_U_0P5)                   0.02       0.22 f
+  comp_u/U108/X (SAEDSLVT14_AO21B_0P5)                    0.01       0.23 r
+  comp_u/U32/X (SAEDSLVT14_AO221_0P5)                     0.01       0.24 r
+  comp_u/U29/X (SAEDSLVT14_OAI21_0P5)                     0.01       0.25 f
+  comp_u/U100/X (SAEDSLVT14_AO21B_0P5)                    0.01       0.26 r
+  comp_u/U68/X (SAEDSLVT14_AO221_0P5)                     0.01       0.28 r
+  comp_u/U98/X (SAEDSLVT14_OA21B_1)                       0.01       0.29 r
+  comp_u/U65/X (SAEDSLVT14_AO221_0P5)                     0.01       0.31 r
+  comp_u/U135/X (SAEDHVT14_ND2B_U_0P5)                    0.02       0.32 r
+  comp_u/U136/X (SAEDHVT14_OA21B_1)                       0.02       0.34 r
+  comp_u/U137/X (SAEDHVT14_AO221_0P5)                     0.02       0.36 r
+  comp_u/U138/X (SAEDHVT14_OA221_U_0P5)                   0.02       0.38 r
+  comp_u/U139/X (SAEDHVT14_AO221_0P5)                     0.02       0.39 r
+  comp_u/U140/X (SAEDHVT14_OA221_U_0P5)                   0.02       0.41 r
+  comp_u/U141/X (SAEDHVT14_AO221_0P5)                     0.02       0.43 r
+  comp_u/U142/X (SAEDHVT14_OAI21_0P5)                     0.01       0.44 f
+  comp_u/U143/X (SAEDHVT14_AO21B_0P5)                     0.01       0.45 r
+  comp_u/U144/X (SAEDHVT14_OAI21_0P5)                     0.01       0.46 f
+  comp_u/U27/X (SAEDSLVT14_OAI311_1)                      0.02       0.48 r
+  comp_u/U24/X (SAEDHVT14_BUF_U_0P5)                      0.03       0.51 r
+  comp_u/U10/X (SAEDSLVT14_AO22_1)                        0.03       0.54 r
+  comp_u/motionY_reg[2]/D (SAEDRVT14_FDP_V2_1)            0.01       0.55 r
+  data arrival time                                                  0.55
+
+  clock ideal_clock1 (rise edge)                          3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock reconvergence pessimism                           0.00       3.00
+  comp_u/motionY_reg[2]/CK (SAEDRVT14_FDP_V2_1)                      3.00 r
+  library setup time                                     -0.01       2.99
+  data required time                                                 2.99
+  ------------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        2.45
+
+
+1

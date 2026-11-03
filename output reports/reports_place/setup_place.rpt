@@ -1,0 +1,64 @@
+Information: The RC mode used is VR for design 'top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1482, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1482, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec 15 13:56:58 2025
+****************************************
+
+  Startpoint: S1[0] (input port clocked by ideal_clock1)
+  Endpoint: pe_u/pe9/Accumulate_reg[7] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                   0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.50      0.50 r
+  S1[0] (in)                                       0.00      0.50 r
+  pe_u/pe9/U16/X (SAEDRVT14_AO22_0P5)              0.01      0.51 r
+  pe_u/pe9/sub_46/U2/X (SAEDRVT14_INV_S_0P5)       0.01      0.52 f
+  pe_u/pe9/sub_46/U1/X (SAEDHVT14_OR2_MM_0P5)      0.01      0.53 f
+  pe_u/pe9/sub_46/U2_1/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                   0.01      0.54 f
+  pe_u/pe9/sub_46/U2_2/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.56 f
+  pe_u/pe9/sub_46/U2_3/S (SAEDRVT14_ADDF_V1_0P5)   0.04      0.59 r
+  pe_u/pe9/add_52/U1_3/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.62 r
+  pe_u/pe9/add_52/U1_4/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.64 r
+  pe_u/pe9/add_52/U1_5/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.66 r
+  pe_u/pe9/add_52/U1_6/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.68 r
+  pe_u/pe9/add_52/U1_7/S (SAEDRVT14_ADDF_V1_0P5)   0.03      0.71 f
+  pe_u/pe9/U10/X (SAEDRVT14_INV_S_0P5)             0.00      0.71 r
+  pe_u/pe9/Accumulate_reg[7]/SD (SAEDRVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                   0.00      0.71 r
+  data arrival time                                          0.71
+
+  clock ideal_clock1 (rise edge)                   3.00      3.00
+  clock network delay (ideal)                      0.00      3.00
+  pe_u/pe9/Accumulate_reg[7]/CK (SAEDRVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                   0.00      3.00 r
+  library setup time                              -0.03      2.97
+  data required time                                         2.97
+  ------------------------------------------------------------------------
+  data required time                                         2.97
+  data arrival time                                         -0.71
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.26
+
+
+1

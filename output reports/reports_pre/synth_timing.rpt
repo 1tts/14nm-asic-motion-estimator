@@ -1,0 +1,67 @@
+Warning: Design 'top' has '15' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06-SP4
+Date   : Tue Dec  9 11:51:38 2025
+****************************************
+
+Operating Conditions: ff0p88v125c   Library: saed14hvt_ff0p88v125c
+Wire Load Model Mode: top
+
+  Startpoint: S2[0] (input port clocked by ideal_clock1)
+  Endpoint: pe_u/pe15/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                ForQA                 saed14hvt_ff0p88v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  S2[0] (in)                                              0.00       0.50 f
+  pe_u/S2[0] (PEtotal)                                    0.00       0.50 f
+  pe_u/pe15/S2[0] (PEend)                                 0.00       0.50 f
+  pe_u/pe15/U5/X (SAEDSLVT14_AO22_1)                      0.03       0.53 f
+  pe_u/pe15/sub_71/B[0] (PEend_DW01_sub_1)                0.00       0.53 f
+  pe_u/pe15/sub_71/U2/X (SAEDSLVT14_INV_1)                0.01       0.55 r
+  pe_u/pe15/sub_71/U1/X (SAEDSLVT14_OR2_MM_1)             0.02       0.56 r
+  pe_u/pe15/sub_71/U2_1/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.59 r
+  pe_u/pe15/sub_71/U2_2/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.62 r
+  pe_u/pe15/sub_71/U2_3/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.65 r
+  pe_u/pe15/sub_71/U2_4/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.68 r
+  pe_u/pe15/sub_71/U2_5/CO (SAEDSLVT14_ADDF_V1_1)         0.03       0.70 r
+  pe_u/pe15/sub_71/U2_6/S (SAEDSLVT14_ADDF_V1_1)          0.04       0.74 f
+  pe_u/pe15/sub_71/DIFF[6] (PEend_DW01_sub_1)             0.00       0.74 f
+  pe_u/pe15/add_77/B[6] (PEend_DW01_add_0)                0.00       0.74 f
+  pe_u/pe15/add_77/U1_6/CO (SAEDSLVT14_ADDF_V1_1)         0.04       0.79 f
+  pe_u/pe15/add_77/U1_7/S (SAEDSLVT14_ADDF_V1_1)          0.03       0.82 r
+  pe_u/pe15/add_77/SUM[7] (PEend_DW01_add_0)              0.00       0.82 r
+  pe_u/pe15/U18/X (SAEDSLVT14_INV_1)                      0.01       0.83 f
+  pe_u/pe15/Accumulate_reg[7]/SD (SAEDSLVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                          0.01       0.84 f
+  data arrival time                                                  0.84
+
+  clock ideal_clock1 (rise edge)                          3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  pe_u/pe15/Accumulate_reg[7]/CK (SAEDSLVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                          0.00       3.00 r
+  library setup time                                     -0.01       2.99
+  data required time                                                 2.99
+  --------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.15
+
+
+1

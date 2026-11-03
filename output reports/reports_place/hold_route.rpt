@@ -1,0 +1,46 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec 15 15:46:34 2025
+****************************************
+
+  Startpoint: pe_u/pe10/Rpipe_reg[7] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe11/Rpipe_reg[7] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+
+  pe_u/pe10/Rpipe_reg[7]/CK (SAEDRVT14_FDP_V2LP_0P5)
+                                                   0.00      0.00 r
+  pe_u/pe10/Rpipe_reg[7]/Q (SAEDRVT14_FDP_V2LP_0P5)
+                                                   0.02      0.02 f
+  pe_u/pe11/Rpipe_reg[7]/D (SAEDRVT14_FDP_V2LP_1)
+                                                   0.00      0.02 f
+  data arrival time                                          0.02
+
+  clock ideal_clock1 (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+  pe_u/pe11/Rpipe_reg[7]/CK (SAEDRVT14_FDP_V2LP_1)
+                                                   0.00      0.01 r
+  library hold time                                0.00      0.02
+  data required time                                         0.02
+  ------------------------------------------------------------------------
+  data required time                                         0.02
+  data arrival time                                         -0.02
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+1

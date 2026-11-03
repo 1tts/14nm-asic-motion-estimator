@@ -1,0 +1,64 @@
+Information: The RC mode used is VR for design 'top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1485, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1485, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec 15 16:52:09 2025
+****************************************
+
+  Startpoint: S2[0] (input port clocked by ideal_clock1)
+  Endpoint: pe_u/pe15/Accumulate_reg[7] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                   0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.50      0.50 f
+  S2[0] (in)                                       0.00      0.50 f
+  pe_u/pe15/U16/X (SAEDSLVT14_AO22_1)              0.01      0.51 f
+  pe_u/pe15/sub_71/U2/X (SAEDSLVT14_INV_1)         0.00      0.51 r
+  pe_u/pe15/sub_71/U1/X (SAEDSLVT14_OR2_MM_1)      0.01      0.52 r
+  pe_u/pe15/sub_71/U2_1/CO (SAEDSLVT14_ADDF_V1_1)
+                                                   0.01      0.53 r
+  pe_u/pe15/sub_71/U2_2/CO (SAEDSLVT14_ADDF_V1_1)
+                                                   0.01      0.54 r
+  pe_u/pe15/sub_71/U2_3/CO (SAEDSLVT14_ADDF_V1_1)
+                                                   0.01      0.55 r
+  pe_u/pe15/sub_71/U2_4/CO (SAEDSLVT14_ADDF_V1_1)
+                                                   0.01      0.56 r
+  pe_u/pe15/sub_71/U2_5/CO (SAEDSLVT14_ADDF_V1_1)
+                                                   0.01      0.57 r
+  pe_u/pe15/sub_71/U2_6/S (SAEDSLVT14_ADDF_V1_1)   0.02      0.59 f
+  pe_u/pe15/add_77/U1_6/CO (SAEDSLVT14_ADDF_V1_1)
+                                                   0.01      0.60 f
+  pe_u/pe15/add_77/U1_7/S (SAEDSLVT14_ADDF_V1_1)   0.02      0.62 r
+  pe_u/pe15/U10/X (SAEDSLVT14_INV_1)               0.00      0.62 f
+  pe_u/pe15/Accumulate_reg[7]/SD (SAEDSLVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                   0.00      0.62 f
+  data arrival time                                          0.62
+
+  clock ideal_clock1 (rise edge)                   3.00      3.00
+  clock network delay (ideal)                      0.00      3.00
+  pe_u/pe15/Accumulate_reg[7]/CK (SAEDSLVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                   0.00      3.00 r
+  library setup time                              -0.01      2.99
+  data required time                                         2.99
+  ------------------------------------------------------------------------
+  data required time                                         2.99
+  data arrival time                                         -0.62
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.37
+
+
+1

@@ -1,0 +1,40 @@
+****************************************
+Report : clock timing
+        -type summary
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec 15 14:06:31 2025
+****************************************
+
+  Mode: func
+  Clock: ideal_clock1
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      pe_u/pe8/Accumulate_reg[0]/CK                            0.02       rp-+       slow
+
+  Minimum setup capture latency:
+      ctl_u/count_reg[6]/CK                                    0.00       rp-+       fast
+
+  Minimum hold launch latency:
+      ctl_u/count_reg[6]/CK                                    0.00       rp-+       fast
+
+  Maximum hold capture latency:
+      pe_u/pe8/Accumulate_reg[0]/CK                            0.02       rp-+       slow
+
+  Maximum active transition:
+      ctl_u/count_reg[1]/CK                                    0.01       rp-+       slow
+
+  Minimum active transition:
+      ctl_u/count_reg[5]/CK                                    0.00       rp-+       fast
+
+  Maximum setup skew:
+      pe_u/pe10/Rpipe_reg[3]/CK                                           rp-+       slow
+      pe_u/pe11/Accumulate_reg[0]/CK                           0.01       rp-+       slow
+
+  Maximum hold skew:
+      ctl_u/count_reg[6]/CK                                               rp-+       slow
+      pe_u/pe8/Accumulate_reg[0]/CK                            0.01       rp-+       slow
+
+
+1

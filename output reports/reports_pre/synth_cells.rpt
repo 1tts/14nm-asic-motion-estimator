@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : cell
+Design : top
+Version: O-2018.06-SP4
+Date   : Tue Dec  9 13:37:17 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        SAEDSLVT14_TIE1_4
+                                          saed14slvt_ff0p88v125c
+                                                          0.399600  
+U2                        SAEDSLVT14_TIE0_V1_2
+                                          saed14slvt_ff0p88v125c
+                                                          0.488400  
+comp_u                    Comparator                      75.258001 h, n
+ctl_u                     control                         56.698800 h, n
+pe_u                      PEtotal                         661.027189
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 5 cells                                             793.871990
+1

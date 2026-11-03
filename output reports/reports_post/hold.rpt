@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : top
+Version: S-2021.06-SP4
+Date   : Mon Dec 15 20:54:44 2025
+****************************************
+
+
+  Startpoint: ctl_u/count_reg[10]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: ctl_u/count_reg[10]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Last common pin: clock
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  ctl_u/count_reg[10]/CK (SAEDSLVT14_FDPCBQ_V2LP_1)       0.00       0.01 r
+  ctl_u/count_reg[10]/Q (SAEDSLVT14_FDPCBQ_V2LP_1)        0.02 &     0.03 f
+  ctl_u/add_113/U1_1_10/S (SAEDSLVT14_ADDH_0P5)           0.00 &     0.03 f
+  ctl_u/count_reg[10]/RS (SAEDSLVT14_FDPCBQ_V2LP_1)       0.00 &     0.03 f
+  data arrival time                                                  0.03
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01       0.01
+  clock reconvergence pessimism                           0.00       0.01
+  ctl_u/count_reg[10]/CK (SAEDSLVT14_FDPCBQ_V2LP_1)                  0.01 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  ------------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.03
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

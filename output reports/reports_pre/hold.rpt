@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : top
+Version: O-2018.06-SP4
+Date   : Tue Dec  9 13:37:35 2025
+****************************************
+
+Operating Conditions: ff0p88v125c   Library: saed14hvt_ff0p88v125c
+Wire Load Model Mode: top
+
+  Startpoint: comp_u/BestDist_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                8000                  saed14hvt_ff0p88v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  comp_u/BestDist_reg[1]/CK (SAEDRVT14_FDP_V2_1)          0.00       0.00 r
+  comp_u/BestDist_reg[1]/Q (SAEDRVT14_FDP_V2_1)           0.02       0.02 r
+  comp_u/U136/X (SAEDHVT14_OA21B_1)                       0.01       0.02 f
+  comp_u/U137/X (SAEDHVT14_AO221_0P5)                   -47.25     -47.23 f
+  comp_u/U138/X (SAEDHVT14_OA221_U_0P5)                   0.01     -47.22 f
+  comp_u/U139/X (SAEDHVT14_AO221_0P5)                   -56.69    -103.90 f
+  comp_u/U140/X (SAEDHVT14_OA221_U_0P5)                   0.01    -103.89 f
+  comp_u/U141/X (SAEDHVT14_AO221_0P5)                   -62.21    -166.10 f
+  comp_u/U142/X (SAEDHVT14_OAI21_0P5)                     0.01    -166.10 r
+  comp_u/U143/X (SAEDHVT14_AO21B_0P5)                     0.01    -166.09 f
+  comp_u/U144/X (SAEDHVT14_OAI21_0P5)                     0.01    -166.08 r
+  comp_u/U27/X (SAEDSLVT14_OAI311_1)                      0.02    -166.07 f
+  comp_u/U82/X (SAEDSLVT14_AO221_0P5)                     0.02    -166.05 f
+  comp_u/BestDist_reg[0]/D (SAEDRVT14_FDP_V2_1)           0.01    -166.04 f
+  data arrival time                                               -166.04
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  comp_u/BestDist_reg[0]/CK (SAEDRVT14_FDP_V2_1)          0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                166.04
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -166.03
+
+
+1

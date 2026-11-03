@@ -1,0 +1,61 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec 15 15:46:34 2025
+****************************************
+
+  Startpoint: S1[0] (input port clocked by ideal_clock1)
+  Endpoint: pe_u/pe2/Accumulate_reg[7] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+  input external delay                             0.50      0.51 r
+  S1[0] (in)                                       0.00      0.51 r
+  pe_u/pe2/U16/X (SAEDRVT14_AO22_0P5)              0.01      0.52 r
+  pe_u/pe2/sub_46/U2/X (SAEDRVT14_INV_S_0P5)       0.01      0.53 f
+  pe_u/pe2/sub_46/U1/X (SAEDHVT14_OR2_MM_0P5)      0.01      0.54 f
+  pe_u/pe2/sub_46/U2_1/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.56 f
+  pe_u/pe2/sub_46/U2_2/S (SAEDRVT14_ADDF_V1_0P5)   0.04      0.59 r
+  pe_u/pe2/add_52/U1_2/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.62 r
+  pe_u/pe2/add_52/U1_3/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.64 r
+  pe_u/pe2/add_52/U1_4/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.65 r
+  pe_u/pe2/add_52/U1_5/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.67 r
+  pe_u/pe2/add_52/U1_6/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                   0.02      0.69 r
+  pe_u/pe2/add_52/U1_7/S (SAEDRVT14_ADDF_V1_0P5)   0.03      0.72 f
+  pe_u/pe2/U10/X (SAEDRVT14_INV_S_0P5)             0.00      0.73 r
+  pe_u/pe2/Accumulate_reg[7]/SD (SAEDRVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                   0.00      0.73 r
+  data arrival time                                          0.73
+
+  clock ideal_clock1 (rise edge)                   3.00      3.00
+  clock network delay (propagated)                 0.00      3.00
+  pe_u/pe2/Accumulate_reg[7]/CK (SAEDRVT14_FSDPSYNSBQ_V2LP_0P5)
+                                                   0.00      3.00 r
+  library setup time                              -0.02      2.98
+  data required time                                         2.98
+  ------------------------------------------------------------------------
+  data required time                                         2.98
+  data arrival time                                         -0.73
+  ------------------------------------------------------------------------
+  slack (MET)                                                2.25
+
+
+1

@@ -1,0 +1,6 @@
+/home/922653261/motion_estimator/outputs/motionEstimator_parasitics.tlup_max_125.spef for scenarios: 
+	 scenario: func_slow, corner type: late/early
+
+/home/922653261/motion_estimator/outputs/motionEstimator_parasitics.tlup_min_125.spef for scenarios: 
+	 scenario: func_fast, corner type: late/early
+

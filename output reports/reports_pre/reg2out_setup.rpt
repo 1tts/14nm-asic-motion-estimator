@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : top
+Version: S-2021.06-SP4
+Date   : Tue Dec  9 13:54:35 2025
+****************************************
+
+
+  Startpoint: ctl_u/count_reg[5]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: AddressS2[8]
+               (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctl_u/count_reg[5]/CK (SAEDSLVT14_FDPCBQ_V2LP_1)        0.00       0.00 r
+  ctl_u/count_reg[5]/Q (SAEDSLVT14_FDPCBQ_V2LP_1)         0.01       0.01 f
+  ctl_u/U99/X (SAEDHVT14_OR2_0P5)                         0.02       0.04 f
+  ctl_u/U97/X (SAEDHVT14_OR2_0P5)                         0.02       0.05 f
+  ctl_u/U95/X (SAEDHVT14_OR2_0P5)                         0.02       0.07 f
+  ctl_u/U93/X (SAEDHVT14_OR2_0P5)                         0.02       0.08 f
+  ctl_u/U92/X (SAEDHVT14_EN2_1)                           0.03       0.11 r
+  ctl_u/add_126/U1_1/CO (SAEDSLVT14_ADDF_V1_1)            0.04       0.15 r
+  ctl_u/add_126/U1_2/CO (SAEDSLVT14_ADDF_V1_1)            0.03       0.18 r
+  ctl_u/add_126/U1_3/S (SAEDSLVT14_ADDF_V1_1)             0.03       0.21 f
+  AddressS2[8] (out)                                      0.00       0.21 f
+  data arrival time                                                  0.21
+
+  clock ideal_clock1 (rise edge)                          3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock reconvergence pessimism                           0.00       3.00
+  output external delay                                  -0.20       2.80
+  data required time                                                 2.80
+  ------------------------------------------------------------------------------
+  data required time                                                 2.80
+  data arrival time                                                 -0.21
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        2.59
+
+
+1
